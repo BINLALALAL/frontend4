@@ -1,0 +1,20 @@
+nav{ 
+    width: 95%; height: 70px;
+    position: fixed;
+    top: 50px; left:50%; transform: translateX(-50%);
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:0 1rem;
+}
+
+.gnb{ display: flex; gap: 1rem; }
+.gnb a{position: relative;padding-top: 3px;}
+.gnb a::after{content: ''; display: block;
+    border-bottom: 2px solid black;
+    width: 00%; position: absolute; left: 50%;
+    transition: 0.4s; 
+}
+.gnb a:hover::after{ left:0; width: 100%;}
